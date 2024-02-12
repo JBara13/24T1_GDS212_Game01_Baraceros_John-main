@@ -8,12 +8,13 @@ public class InputHandler : MonoBehaviour
 {
     [SerializeField] TMP_InputField inputField;
     [SerializeField] TMP_Text resultText;
+    public string firstAnswer;
 
     public void ValidateInput()
     {
-        string input = inputField.text;
+        firstAnswer = inputField.text;
 
-        if (input.Length > 1)
+        if (firstAnswer == "14")
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
