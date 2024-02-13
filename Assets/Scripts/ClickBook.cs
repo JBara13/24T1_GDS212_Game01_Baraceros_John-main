@@ -6,24 +6,99 @@ using UnityEngine.EventSystems;
 
 public class ClickObject : MonoBehaviour
 {
-    public GameObject book;
+    public GameObject mathBookObject;
     public GameObject mathBook;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject historyBookObject;
+    public GameObject historyBook;
 
-    }
+    public GameObject scienceBookObject;
+    public GameObject scienceBook;
+
+    public GameObject englishBookObject;
+    public GameObject englishBook;
+
+    public GameObject musicBookObject;
+    public GameObject musicBook;
+
+    public GameObject geographyBookObject;
+    public GameObject geographyBook;
 
     // Update is called once per frame
     void Update()
     {
+        //MATHBOOK
         if (Input.GetMouseButtonDown(0))
         {
-            if (book == GetClickedObject(out RaycastHit hit))
+            if (mathBookObject == GetClickedObject(out RaycastHit hit))
             {
                 print("clicked/touched!");
                 mathBook.SetActive(true);
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("Mouse is off!");
+        }
+        //HISTORYBOOK
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (historyBookObject == GetClickedObject(out RaycastHit hit))
+            {
+                print("clicked/touched!");
+                historyBook.SetActive(true);
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("Mouse is off!");
+        }
+        //SCIENCEBOOK
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (scienceBookObject == GetClickedObject(out RaycastHit hit))
+            {
+                print("clicked/touched!");
+                scienceBook.SetActive(true);
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("Mouse is off!");
+        }
+        //ENGLISHBOOK
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (englishBookObject == GetClickedObject(out RaycastHit hit))
+            {
+                print("clicked/touched!");
+                englishBook.SetActive(true);
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("Mouse is off!");
+        }
+        //MUSICBOOK
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (musicBookObject == GetClickedObject(out RaycastHit hit))
+            {
+                print("clicked/touched!");
+                musicBook.SetActive(true);
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            print("Mouse is off!");
+        }
+        //GEOGRAPHYBOOK
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (geographyBookObject == GetClickedObject(out RaycastHit hit))
+            {
+                print("clicked/touched!");
+                geographyBook.SetActive(true);
             }
         }
         if (Input.GetMouseButtonUp(0))
