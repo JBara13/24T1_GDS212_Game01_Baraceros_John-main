@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class InputHandler : MonoBehaviour
 {
@@ -211,7 +212,7 @@ public class InputHandler : MonoBehaviour
     {
         secondMusicAnswer = inputField.text;
 
-        if (secondMusicAnswer == "Cymbals")
+        if (secondMusicAnswer == "Queen")
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
@@ -251,6 +252,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            SceneManager.LoadScene(2);
             geographyBook.SetActive(false);
             checklistText.text = "6/6 Subjects Passed";
         }
