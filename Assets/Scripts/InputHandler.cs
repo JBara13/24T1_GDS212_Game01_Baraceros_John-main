@@ -14,21 +14,27 @@ public class InputHandler : MonoBehaviour
     // MATH
     public string firstMathAnswer;
     public string secondMathAnswer;
+    public GameObject mathQuestion2;
     //HISTORY
     public string firstHistoryAnswer;
     public string secondHistoryAnswer;
+    public GameObject historyQuestion2;
     //SCIENCE
     public string firstScienceAnswer;
     public string secondScienceAnswer;
+    public GameObject scienceQuestion2;
     //ENGLISH
     public string firstEnglishAnswer;
     public string secondEnglishAnswer;
+    public GameObject englishQuestion2;
     //MUSIC
     public string firstMusicAnswer;
     public string secondMusicAnswer;
+    public GameObject musicQuestion2;
     //GEOGRAPHY
     public string firstGeographyAnswer;
     public string secondGeographyAnswer;
+    public GameObject geographyQuestion2;
 
     //Subject Books
     public GameObject mathBook;
@@ -52,6 +58,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            mathQuestion2.SetActive(true);
         }
         else
         {
@@ -90,6 +97,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            historyQuestion2.SetActive(true);
         }
         else
         {
@@ -127,6 +135,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            scienceQuestion2.SetActive(true);
         }
         else
         {
@@ -163,6 +172,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            englishQuestion2.SetActive(true);
         }
         else
         {
@@ -199,6 +209,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            musicQuestion2.SetActive(true);
         }
         else
         {
@@ -235,6 +246,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Valid Input";
             resultText.color = Color.green;
+            geographyQuestion2.SetActive(true);
         }
         else
         {

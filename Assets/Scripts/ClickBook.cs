@@ -8,21 +8,27 @@ public class ClickObject : MonoBehaviour
 {
     public GameObject mathBookObject;
     public GameObject mathBook;
+    public GameObject mathQuestion2;
 
     public GameObject historyBookObject;
     public GameObject historyBook;
+    public GameObject historyQuestion2;
 
     public GameObject scienceBookObject;
     public GameObject scienceBook;
+    public GameObject scienceQuestion2;
 
     public GameObject englishBookObject;
     public GameObject englishBook;
+    public GameObject englishQuestion2;
 
     public GameObject musicBookObject;
     public GameObject musicBook;
+    public GameObject musicQuestion2;
 
     public GameObject geographyBookObject;
     public GameObject geographyBook;
+    public GameObject geographyQuestion2;
 
     // Update is called once per frame
     void Update()
@@ -34,6 +40,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 mathBook.SetActive(true);
+                mathQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -47,6 +54,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 historyBook.SetActive(true);
+                historyQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -60,6 +68,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 scienceBook.SetActive(true);
+                scienceQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -73,6 +82,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 englishBook.SetActive(true);
+                englishQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -86,6 +96,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 musicBook.SetActive(true);
+                musicQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -99,6 +110,7 @@ public class ClickObject : MonoBehaviour
             {
                 print("clicked/touched!");
                 geographyBook.SetActive(true);
+                geographyQuestion2.SetActive(false);
             }
         }
         if (Input.GetMouseButtonUp(0))
